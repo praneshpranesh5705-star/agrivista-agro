@@ -1,4 +1,4 @@
-import { COMPANY, STATS } from '../data/content'
+import { COMPANY, STATS, IMG } from '../data/content'
 import { Icon } from './Icons'
 
 const TRUST = [
@@ -13,7 +13,7 @@ export default function Hero({ onNavigate }) {
     <section className="hero" id="home">
       <div className="hero__bg">
         <img
-          src="./img/hero.jpg"
+          src={IMG.hero}
           alt="Golden hour over a ripening crop field"
           fetchPriority="high"
         />

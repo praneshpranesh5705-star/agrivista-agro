@@ -1,4 +1,4 @@
-import { COMPANY } from '../data/content'
+import { COMPANY, IMG } from '../data/content'
 import { Icon } from './Icons'
 import { Reveal } from '../hooks/useReveal'
 
@@ -30,7 +30,7 @@ export default function About() {
     <section className="section" id="about">
       <div className="wrap about">
         <Reveal className="about__media">
-          <img src="./img/farmer.jpg" alt="A farmer inspecting a ripening crop" loading="lazy" />
+          <img src={IMG.farmer} alt="A farmer inspecting a ripening crop" loading="lazy" />
           <div className="about__badge">
             <span className="about__badge-icon" aria-hidden="true">
               <Icon.award size={22} />
