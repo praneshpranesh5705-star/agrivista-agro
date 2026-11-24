@@ -3,6 +3,21 @@
 // All copy and catalogue data lives here so the components stay presentational.
 // ---------------------------------------------------------------------------
 
+// Placeholder photography. These are third-party stock images referenced by URL
+// so the site renders immediately. Replace with the business's own photos:
+// drop files into public/img/ and change these to './img/<name>.jpg'.
+export const IMG = {
+  hero: 'https://media.istockphoto.com/id/1347098747/photo/sunset-cornfield.jpg?s=612x612&w=0&k=20&c=nsb5qkMUoK7rKThvRAiBdfNixNZiLTLUEI4XWRAg0Sw=',
+  farmer:
+    'https://media.istockphoto.com/id/1385078480/photo/indian-farmer-at-green-onion-agriculture-field.jpg?s=612x612&w=0&k=20&c=Pyxhzi7ccG9-6gU4sSm-FQvC8s1z0wSHLl68G-ChJg4=',
+  seeds:
+    'https://static.vecteezy.com/system/resources/previews/071/109/182/large_2x/a-detailed-macro-shot-captures-various-seeds-and-grains-showcasing-their-texture-and-color-photo.jpeg',
+  drip: 'https://www.pipelife.com/content/dam/pipelife/international/marketing/agriculture/irregation/Irrigation_pages_Drip_Irrigation_Hero.jpg.imgTransformer/crop_1to1/md-2/1710424080740/Irrigation_pages_Drip_Irrigation_Hero.jpg',
+  seedlings:
+    'https://media.istockphoto.com/id/2183232610/photo/sunset-over-golden-wheat-field.jpg?s=612x612&w=0&k=20&c=8Aec2jTMvONNLNRdnC-gPcG1BYN9XTLFRFv_52aEUmo=',
+  tractor: 'https://media.sciencephoto.com/f0/17/66/93/f0176693-800px-wm.jpg',
+}
+
 export const COMPANY = {
   name: 'AgriVista Agro Solutions',
   shortName: 'AgriVista',
@@ -37,42 +52,42 @@ export const CATEGORIES = [
     id: 'seeds',
     name: 'Seeds & Saplings',
     blurb: 'Certified, high-germination seed for cereals, pulses, vegetables and horticulture.',
-    image: './img/seeds.jpg',
+    image: IMG.seeds,
     icon: 'seed',
   },
   {
     id: 'nutrients',
     name: 'Nutrients & Fertilizers',
     blurb: 'Organic compost, bio-fertilizers and balanced NPK blends matched to your soil test.',
-    image: './img/seedlings.jpg',
+    image: IMG.seedlings,
     icon: 'leaf',
   },
   {
     id: 'protection',
     name: 'Crop Protection',
     blurb: 'Bio-pesticides and integrated pest management inputs with safe-usage guidance.',
-    image: './img/farmer.jpg',
+    image: IMG.farmer,
     icon: 'shield',
   },
   {
     id: 'irrigation',
     name: 'Irrigation Systems',
     blurb: 'Drip and sprinkler design, supply and installation with subsidy paperwork support.',
-    image: './img/drip.jpg',
+    image: IMG.drip,
     icon: 'drop',
   },
   {
     id: 'equipment',
     name: 'Farm Equipment',
     blurb: 'Hand tools, power sprayers, tillers and implements — sales, spares and service.',
-    image: './img/tractor.jpg',
+    image: IMG.tractor,
     icon: 'gear',
   },
   {
     id: 'advisory',
     name: 'Soil Testing & Advisory',
     blurb: 'Laboratory soil and water testing with a crop-wise nutrient plan you can act on.',
-    image: './img/hero.jpg',
+    image: IMG.hero,
     icon: 'flask',
   },
 ]
@@ -88,7 +103,7 @@ export const PRODUCTS = [
     rating: 4.8,
     reviews: 214,
     badge: 'Best seller',
-    image: './img/seeds.jpg',
+    image: IMG.seeds,
     short: 'High-yielding, blast-tolerant paddy variety suited to delta and canal command areas.',
     specs: [
       { k: 'Germination', v: '≥ 92%' },
@@ -107,7 +122,7 @@ export const PRODUCTS = [
     rating: 4.6,
     reviews: 168,
     badge: 'Organic',
-    image: './img/seedlings.jpg',
+    image: IMG.seedlings,
     short: 'Fully decomposed, enriched compost that rebuilds soil organic carbon and microbial life.',
     specs: [
       { k: 'Organic carbon', v: '≥ 18%' },
@@ -126,7 +141,7 @@ export const PRODUCTS = [
     rating: 4.5,
     reviews: 132,
     badge: 'Residue-free',
-    image: './img/farmer.jpg',
+    image: IMG.farmer,
     short: 'Cold-pressed neem formulation for sucking pests — safe for pollinators when sprayed at dusk.',
     specs: [
       { k: 'Azadirachtin', v: '1500 ppm' },
@@ -145,7 +160,7 @@ export const PRODUCTS = [
     rating: 4.9,
     reviews: 96,
     badge: 'Subsidy eligible',
-    image: './img/drip.jpg',
+    image: IMG.drip,
     short: 'Complete inline drip package with filter, valves and layout design — saves up to 60% water.',
     specs: [
       { k: 'Coverage', v: '1 acre (design included)' },
@@ -164,7 +179,7 @@ export const PRODUCTS = [
     rating: 4.4,
     reviews: 187,
     badge: 'Serviceable',
-    image: './img/tractor.jpg',
+    image: IMG.tractor,
     short: 'Twin-mode battery and manual sprayer with four nozzles and a 12-month on-site warranty.',
     specs: [
       { k: 'Tank capacity', v: '16 litres' },
@@ -183,7 +198,7 @@ export const PRODUCTS = [
     rating: 4.7,
     reviews: 74,
     badge: 'Lab certified',
-    image: './img/hero.jpg',
+    image: IMG.hero,
     short: 'NABL-partner laboratory analysis of 12 soil parameters plus a crop-wise fertiliser schedule.',
     specs: [
       { k: 'Parameters', v: '12 (pH, EC, OC, N, P, K, S, Zn, Fe, Mn, Cu, B)' },
